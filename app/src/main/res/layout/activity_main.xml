@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextRut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rut" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRut"
+        android:hint="Nombre" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNombre"
+        android:hint="Correo" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCorreo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:background="#407E0A"
+        android:backgroundTint="#850E0E"
+        android:text="Guardar"
+        app:iconTint="#E41515" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGuardar"
+        android:layout_marginStart="16dp"
+        android:background="#983030"
+        android:text="Buscar"
+        app:iconTint="#831515"
+        app:iconTintMode="add" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBuscar"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#E80D0D"
+        android:text="Limpiar" />
+
+</RelativeLayout>
